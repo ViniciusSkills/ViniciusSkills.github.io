@@ -8,15 +8,33 @@
     
     <title>Web Page with Sections</title>
     <meta name="description" content="A sample web page with multiple sections.">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        header {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
+
+section {   
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
+section h2 {   
+    @apply mt-8;
+}
+
+section h3 {   
+    @apply mt-6;
+}
+
+section p {   
+    @apply mb-4;
+}
+
+    </style>
 
 
 </head>    
     
 <body>
-
- <!-- Navigation menu with logo -->
-  <nav></nav>
-
 
  <!-- Hero block -->
     <header>
@@ -65,6 +83,7 @@
             <h2>Smaller Heading</h2>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima exercitationem, fuga doloribus sequi sint eveniet nobis nulla obcaecati quibusdam quae, quia aliquam mollitia ea vel ullam dolores natus in quisquam?</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis magni fugiat similique eius dicta blanditiis laborum animi pariatur exercitationem? Quasi consequatur nobis vel delectus necessitatibus quas quis consequuntur tenetur tempora!</p>
+            <p>Return to <a href="../index.html">Home</a></p>
 
         </section>
     
