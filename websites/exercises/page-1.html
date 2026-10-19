@@ -58,64 +58,37 @@
                 Roboto,
                 sans-serif;
         }
+    body {
+    @apply bg-mauve-100
+}
 
+header {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
 
-        /* Header */
-        header {
-            @apply py-[5%] px-[5%] md:py-[3%] md:px-[12%] text-center;
-        }
+header h1 {
+    @apply text-6xl md:text-8xl font-serif text-center tracking-tighter text-mauve-600;
+}
 
+section {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
 
-        /* Section */
-        section {
-            @apply py-[5%] px-[5%] md:py-[2%] md:px-[22%];
-        }
+section h2 {
+    @apply mt-8 text-3xl md:text-4xl font-serif tracking-tight font-bold text-mauve-500;
+}
 
+section h3 {
+    @apply mt-6 text-2xl md:text-3xl font-serif font-bold text-mauve-500;
+}
 
-        /* Header h1 */
-        header h1 {
-            @apply mb-4 leading-[1.2] text-[clamp(2.90rem,3.36vw+2.06rem,4.75rem)];
-            letter-spacing: -3px;
-        }
+section p {
+    @apply mb-4 text-base md:text-lg leading-8 text-slate-700;
+}
 
-
-        /* Header h2 */
-        header h2 {
-            @apply font-normal italic text-[clamp(1.56rem,1vw+1.31rem,2.11rem)];
-            letter-spacing: -1px;
-        }
-
-
-        /* Section h2 */
-        section h2 {
-            @apply mb-2 text-[clamp(1.76rem,1.40vw+1.40rem,2.53rem)];
-            letter-spacing: -1px;
-        }
-
-
-        /* Section h3 */
-        section h3 {
-            letter-spacing: -1px;
-        }
-
-
-        /* Section paragraphs */
-        section p {
-            @apply mb-4 leading-[1.45] text-[clamp(1.15rem,0.39vw+1.05rem,1.48rem)];
-            font-family: var(--font-serif);
-        }
-
-
-        /* Sans-serif for all other elements */
-        body,
-        header,
-        header h1,
-        header h2,
-        section h2,
-        section h3 {
-            font-family: var(--font-sans);
-        }
-
+a {
+    @apply text-mauve-600
+}
     </style>
 
 </head>
@@ -174,7 +147,7 @@
                 rights with a high hand.
             </p>
 
-            <h3>Smaller Heading</h3>
+            <h2>Smaller Heading</h2>
 
             <p>
                 A wonderful fact to reflect upon, that every human creature

@@ -14,60 +14,36 @@
 
     <style type="text/tailwindcss">
 
-        header {
-            @apply py-[5%] px-[5%] md:py-[3%] md:px-[12%] text-center;
-        }
+        body {
+    @apply bg-purple-800
+}
 
-        section {
-            @apply py-[5%] px-[5%] md:py-[2%] md:px-[22%];
-        }
+header {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
 
-        header h1 {
-            @apply mb-4 leading-[1.2] text-[clamp(2.90rem,3.36vw+2.06rem,4.75rem)];
-            letter-spacing: -3px;
-        }
+header h1 {
+    @apply text-6xl md:text-8xl font-serif text-center tracking-widest text-white;
+}
 
-        header h2 {
-            @apply text-[clamp(1.56rem,1vw+1.31rem,2.11rem)] font-normal italic;
-            letter-spacing: -1px;
-        }
+section {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
 
-        section h2 {
-            @apply mb-2 text-[clamp(1.76rem,1.40vw+1.40rem,2.53rem)];
-            letter-spacing: -1px;
-            text-transform: uppercase;
-        }
+section h2 {
+    @apply mt-8 text-3xl md:text-4xl font-serif tracking-wide uppercase font-bold text-white;
+}
 
-        section p {
-            @apply mb-4 text-[clamp(1.15rem,0.39vw+1.05rem,1.48rem)] leading-[1.45];
-        }
+section p {
+    @apply mb-4 text-base md:text-lg leading-9 text-white;
+}
 
-        :root {
-            --font-serif:
-                Cambria,
-                "Hoefler Text",
-                "Noto Serif",
-                "Droid Serif",
-                serif;
-
-            --font-sans:
-                "Segoe UI",
-                -apple-system,
-                Roboto,
-                sans-serif;
-        }
-
-        body,
-        header,
-        section h2 {
-            font-family: var(--font-sans);
-        }
-
-        section p {
-            font-family: var(--font-serif);
-        }
+a {
+    @apply text-white
+}
 
     </style>
+<!-- Vinicius Miranda Nunes 83621 -->
 
 </head>
 
