@@ -13,79 +13,60 @@
 
     <style type="text/tailwindcss">
 
-        header {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-        }
+       body {
+    @apply font-serif text-blue-200;
+}
 
-        section {
-            @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
-        }
+header {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
 
-        header h1 {
-            @apply mb-4 text-center leading-[1.2] text-[clamp(2.90rem,3.36vw+2.06rem,4.75rem)];
-            letter-spacing: -3px;
-        }
+header h1 {
+    @apply text-6xl md:text-9xl mb-10 font-bold text-blue-800;
+}
 
-        section h2 {
-            @apply mt-8 mb-2 text-[clamp(1.76rem,1.40vw+1.40rem,2.53rem)];
-            letter-spacing: -1px;
-        }
+/* Style h2 in header, but not in sections */
+header h2 {
+    @apply text-3xl md:text-5xl italic text-blue-800;
+}
 
-        section h3 {
-            @apply mt-6;
-            letter-spacing: -1px;
-        }
+section {
+    @apply pt-8 px-[9%] pb-[42px] md:py-[3%] md:px-[20%];
+}
 
-        section p {
-            @apply mb-4 text-[clamp(1.15rem,0.39vw+1.05rem,1.48rem)] leading-[1.45];
-        }
+/* Style h2 in sections, but not in header */
+section h2 {
+    @apply mt-8 mb-2 text-2xl md:text-4xl font-bold tracking-tight font-bold text-blue-800;
+}
 
-        :root {
-            --font-serif:
-                Cambria,
-                "Hoefler Text",
-                "Noto Serif",
-                "Droid Serif",
-                serif;
+section p {
+    @apply mb-4 text-lg md:text-2xl leading-10 text-blue-800;
+}
+.section-1 { @apply bg-yellow-200; }
+.section-2 { @apply bg-green-200; }
+.section-3 { @apply bg-orange-200; }
+.section-4 { @apply bg-sky-950; }
+.section-5 { @apply bg-rose-200; }
+.section-6 { @apply bg-indigo-100}
 
-            --font-sans:
-                "Segoe UI",
-                -apple-system,
-                Roboto,
-                sans-serif;
-        }
-
-        body,
-        header,
-        section h2,
-        section h3 {
-            font-family: var(--font-sans);
-        }
-
-        section p {
-            font-family: var(--font-serif);
-        }
-
+.section-4 h2, .section-4 p { @apply text-white; }
     </style>
+<!-- Vinicius Miranda Nunes 83621 -->
 
 </head>
 
 <body>
 
-    <!-- Hero block -->
     <header>
 
         <h1>Big heading</h1>
-
         <h2>Smaller sub-heading</h2>
 
     </header>
 
-
-    <!-- Main content of web page in sections -->
     <main>
 
-        <section>
+        <section class="section-1">
 
             <h2>Smaller Heading</h2>
 
@@ -106,7 +87,7 @@
         </section>
 
 
-        <section>
+        <section class="section-2">
 
             <h2>Smaller Heading</h2>
 
@@ -127,7 +108,7 @@
         </section>
 
 
-        <section>
+        <section class="section-3">
 
             <h2>Smaller Heading</h2>
 
@@ -149,7 +130,7 @@
         </section>
 
 
-        <section>
+        <section class="section-4">
 
             <h2>Smaller Heading</h2>
 
@@ -171,7 +152,7 @@
         </section>
 
 
-        <section>
+        <section class="section-5">
 
             <h2>Smaller Heading</h2>
 
@@ -193,7 +174,7 @@
         </section>
 
 
-        <section>
+        <section class="section-6">
 
             <h2>Smaller Heading</h2>
 
@@ -213,7 +194,7 @@
             </p>
 
             <p>
-                Return to <a href="../index.html">Home</a>
+                Return to <a class="text-blue-900 underline" href="../index.html">Home</a>
             </p>
 
         </section>
