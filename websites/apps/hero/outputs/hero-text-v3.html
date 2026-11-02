@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Short, unique description of web page. Often used as the snippet shown in search results. About 120 characters is ideal.">
+    <title>My Hero Section</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <style type="text/tailwindcss">
+        .hero {
+            @apply flex items-center px-6 py-16 md:px-12;
+            background-color: var(--hero-bg, var(--preset-hero-bg));
+        }
+
+        .hero-content {
+            @apply w-full max-w-5xl mx-auto;
+        }
+
+        .hero-light {
+            --preset-hero-bg: theme(colors.slate.50);
+        }
+
+        .hero-dark {
+            --preset-hero-bg: theme(colors.slate.900);
+        }
+
+        .hero-centre {
+            @apply text-center;
+        }
+
+        .hero-min-height {
+            @apply min-h-[480px] md:min-h-[85vh];
+        }
+
+        .hero h1 {
+            @apply max-w-[20ch] text-4xl font-bold leading-tight md:text-6xl;
+            overflow-wrap: anywhere;
+            color: var(--hero-h1-color, var(--preset-h1-color));
+        }
+
+        .hero h2 {
+            @apply max-w-[55ch] mt-6 text-lg leading-relaxed md:text-2xl;
+            overflow-wrap: anywhere;
+            color: var(--hero-h2-color, var(--preset-h2-color));
+        }
+
+        .hero-light h1 {
+            --preset-h1-color: theme(colors.slate.900);
+        }
+
+        .hero-light h2 {
+            --preset-h2-color: theme(colors.slate.700);
+        }
+
+        .hero-dark h1 {
+            --preset-h1-color: theme(colors.slate.50);
+        }
+
+        .hero-dark h2 {
+            --preset-h2-color: theme(colors.slate.300);
+        }
+
+        .hero-centre h1,
+        .hero-centre h2 {
+            @apply mx-auto;
+        }
+
+        .hero-h1-serif {
+            @apply font-serif;
+        }
+
+        .hero-h2-serif {
+            @apply font-serif;
+        }
+    </style>
+
+    <style>
+        #heroHeading {
+            letter-spacing: -0.05em;
+        }
+        #heroSubheading {
+            letter-spacing: -0.025em;
+        }
+        #hero {
+            background-color: #f5f3ff !important;
+        }
+        #heroHeading {
+            color: #0f172a !important;
+        }
+        #heroSubheading {
+            color: #334155 !important;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="hero hero-light hero-min-height">
+        <div class="hero-content">
+            <h1 class="">Lorem ipsum dolor sit amet</h1>
+			<h2 class="">Consectetur adipiscing elit. Integer vitae libero ac risus egestas placerat.</h2>
+        </div>
+    </header>
+</body>
+</html>
